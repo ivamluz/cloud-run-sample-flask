@@ -5,7 +5,7 @@ read -s -p "Enter the API KEY: " API_KEY
 
 HASHED_API_KEY=`./hash_value.py --value "${API_KEY}"`
 
-gcloud beta run \
+gcloud run \
   services update $SERVICE_NAME \
   --region us-central1 \
   --platform managed \
