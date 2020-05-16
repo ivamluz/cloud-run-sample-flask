@@ -80,7 +80,7 @@ chmod 755 setup.sh set_env_vars.sh
 
 When you run the `setup.sh` script, you will be prompted for the name your Google Cloud Run service should be deployed with.
 
-For example, if `pipeline-demo` were entered, that's what you should see if you run the `git diff` command:
+For example, if `pipeline-demo` is entered, you are be expected to see an output similar to the following if you run `git diff` command:
 
 ```diff
 diff --git a/cloudbuild.yaml b/cloudbuild.yaml
@@ -114,3 +114,5 @@ index 3998c9d..2881982 100644
          "us-central1",
          "--platform",
 ```
+
+After the `cloudbuild.yaml`, make sure to commit and push your changes to the branch you want Google Cloud Build to watch for changes.
