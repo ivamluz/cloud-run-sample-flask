@@ -1,11 +1,11 @@
 steps:
   - name: gcr.io/cloud-builders/docker
     args:
-      ["build", "-t", "gcr.io/$PROJECT_ID/__SERVICE_NAME__:${SHORT_SHA}", "."]
+      ["build", "-t", "gcr.io/$PROJECT_ID/pipeline-demo:${SHORT_SHA}", "."]
     dir: "app"
 
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/__SERVICE_NAME__"]
+    args: ["push", "gcr.io/$PROJECT_ID/pipeline-demo"]
     dir: "app"
 
   - name: "gcr.io/cloud-builders/gcloud"
@@ -14,9 +14,9 @@ steps:
         "beta",
         "run",
         "deploy",
-        "__SERVICE_NAME__",
+        "pipeline-demo",
         "--image",
-        "gcr.io/$PROJECT_ID/__SERVICE_NAME__:${SHORT_SHA}",
+        "gcr.io/$PROJECT_ID/pipeline-demo:${SHORT_SHA}",
         "--region",
         "us-central1",
         "--platform",
