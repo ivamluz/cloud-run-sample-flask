@@ -61,4 +61,4 @@ curl \
 
 If you see the output above, it means everything is working as expected.
 
-After everything is running, please make sure to keep reading the [tutorial](https://medium.com/ci-t/how-to-set-up-a-deployment-pipeline-on-gcp-with-cloud-build-container-registry-and-cloud-run-73391f5b77e4)..
+After everything is running, please make sure to keep reading the [tutorial](https://medium.com/ci-t/how-to-set-up-a-deployment-pipeline-on-gcp-with-cloud-build-container-registry-and-cloud-run-73391f5b77e4).
