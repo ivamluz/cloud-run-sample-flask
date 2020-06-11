@@ -4,7 +4,7 @@
 
 This project is a simple Flask app developed for helping to illustrate how to set up a deployment pipeline on GCP with Cloud Builder, Container Registry and Cloud Run.
 
-Check the complete tutorial here. (**TODO:** Add link to article after publishing.)
+Check the complete tutorial [here](https://medium.com/ci-t/how-to-set-up-a-deployment-pipeline-on-gcp-with-cloud-build-container-registry-and-cloud-run-73391f5b77e4).
 
 ## 2. Environment setup
 
@@ -35,7 +35,7 @@ cd cloud-run-sample-flask
 ## 3. Run the app locally
 
 ```bash
-cd src
+cd app
 
 HASHED_API_KEY=`../scripts/hash_value.py --value "1234"` \
   gunicorn --bind :8080 --workers 1 --threads 8 app:app --reload
@@ -61,4 +61,4 @@ curl \
 
 If you see the output above, it means everything is working as expected.
 
-After everything is running, please make sure to keep reading the tutorial at (**TODO:** _LINK_TO_BE_ADDED_).
+After everything is running, please make sure to keep reading the [tutorial](https://medium.com/ci-t/how-to-set-up-a-deployment-pipeline-on-gcp-with-cloud-build-container-registry-and-cloud-run-73391f5b77e4)..
